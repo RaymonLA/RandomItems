@@ -21,6 +21,7 @@
                   valueInDollars:(int)value
                     serialNumber:(NSString *)sNumber;
 
+// Secondary initializer for BNRItem
 - (instancetype)initWithItemName:(NSString *)name;
 
 - (void)setItemName:(NSString *)str;
