@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+// Header file declaration convention
+// 1) Instance variables
+// 2) Class Methods (+)
+// 3) Initializers
+// 4) Instance Methods (-)
+
 @interface BNRItem : NSObject
 {
     NSString *_itemName;
@@ -15,6 +21,8 @@
     int _valueInDollars;
     NSDate *_dateCreated;
 }
+
++ (instancetype)randomItem;
 
 // Designated initializer for BNRItem
 - (instancetype)initWithItemName:(NSString *)name
